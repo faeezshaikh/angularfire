@@ -4,7 +4,7 @@
         <input type="text" mdInput [(ngModel)]="company.name">
     </md-input-container>
     <md-card-actions align="right">
-        <button md-button (click)="saveCompany(company)">Save</button>
-        <button md-button (click)="removeCompany(company)">Remove</button>
+        <button (click)="saveCompany(company)"   md-raised-button color="primary" >Save</button>
+        <button (click)="removeCompany(company)" md-raised-button color="warn">Remove</button>
     </md-card-actions>
 </md-card>
